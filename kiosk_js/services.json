@@ -1,0 +1,9 @@
+{
+  "id": "com.ssu.webos.samdujungchi.js_service",
+  "description": "HelloWorld Service",
+  "services": [
+    {
+      "name": "com.ssu.webos.samdujungchi.js_service"
+    }
+  ]
+}
