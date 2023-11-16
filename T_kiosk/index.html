@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sushi Kiosk</title>
+</head>
+<body>
+  <header>
+    <h1>Sushi Kiosk</h1>
+  </header>
+  <main>
+    <div class="menu">
+      <h2>Menu</h2>
+      <div class="item">
+        <span>Sushi Roll 1</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="item">
+        <span>Sushi Roll 2</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- Add more menu items here -->
+    </div>
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be added dynamically using JavaScript -->
+      </ul>
+      <button id="checkout-button">Checkout</button>
+    </div>
+  </main>
+  <div id="popup" class="popup">
+    <p id="popup-message"></p>
+    <button id="close-popup">닫기</button>
+    <button id="confirm-payment" style="display: none;">결제하기</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
