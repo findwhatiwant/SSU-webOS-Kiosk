@@ -7,12 +7,37 @@ SPDX-License-Identifier: Apache-2.0
 <!DOCTYPE html>
 <html>
 <head>
-<title>Example Web App</title>
+<title>Start Scene</title>
 <style type="text/css">
+    .fade-in-box {
+        display: inline-block;
+        background: #FFFFFF;
+        padding: 10px;
+        animation: fadein 3s;
+        -moz-animation: fadein 3s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 3s; /* Opera */
+      }
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
     body {
         width: 100%;
         height: 100%;
-        background-color:#202020;
+        background-color:#FFFFFF;
     }
     div {
         position:absolute;
@@ -25,6 +50,17 @@ SPDX-License-Identifier: Apache-2.0
         vertical-align: middle;
         text-align:center;
         color:#FFFFFF;
+    }
+    
+    #startmainlogo{
+        width : 90%;
+        height : 90%;
+    }
+    #nextbutton{
+        width : 300px;
+        height : 100px;
+        background-color: black;
+        border-radius: 30px;
     }
 </style>
 <script type="text/javascript">
@@ -80,9 +116,7 @@ window.onload = function() {
 }
 </script>
 </head>
-<body>
-    <h1>SAMDU COFFEE</h1>
-    <h4>아무 곳이나 누르시오</h4>
-    <button onclick="location.href='menu.html'"> move for test</button>
+    <img class="fade-in-box" id = "startmainlogo"src = "/Users/jousig/Programming/SSU-webOS-Kiosk/kiosk/images/startscene_logo.png" >
+    <button id = "nextbutton" onclick="location.href='menu.html'"> move for test</button>
 </body>
 </html>
