@@ -1,6 +1,7 @@
 # SSU-webOS-Kiosk
 
 Main color  : #FFEA00   #704E2F
+Sub color ; #FFFFFF     #000000
 
 <h2>Soongsil University WebOS OpenSource practice project</h2>
 
