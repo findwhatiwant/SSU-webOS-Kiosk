@@ -7,26 +7,71 @@
     var menu = {
         "Americano" : {
             "price" : 2500,
-            "shot" : 1
+            "shot" : 1,
+            "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630171805_1656577085458_7skvYFEJwH.jpg"
         },
-        "Cafe Latte" : {
+        "CafeLatte" : {
             "price" : 3000,
-            "shot" : 2
+            "shot" : 2,
+            "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630165440_1656575680273_1mqBtip7qh.jpg"
+        },
+        "CafeMocha" : {
+            "price" : 3000,
+            "shot" : 2,
+            "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630165537_1656575737487_Bxg3VBe7i4.jpg"
         },
         "Espresso" : {
             "price" : 2000,
-            "shot" : 2
+            "shot" : 2,
+            "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220818143216_1660800736386_C007eosz5G.jpg"
         }
     }
     console.log(menu.Americano);
 </script>
+<style>
+    body{
+        background-color: #D3D3D3;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    }
+    .menuIMG{
+        margin-left: 10%;
+        width: 80%;
+        height : 80%;
+    }
+    .item{
+        background-color: white;
+        border-radius: 10px;
+    }
+</style>
 <body>
     <header>
 
     </header>
-
+    <div class = "container">
+        <div class = "item" id = "Americano"></div>
+        <div class = "item" id = "CafeLatte"></div>
+        <div class = "item" id = "CafeMocha"></div>
+        <div class = "item" id = "Espresso"></div>
+        <div class = "item"></div>
+        <div class = "item"></div>
+    </div>
+    
     <footer>
 
     </footer>
 </body>
+<script>
+    document.getElementById("Americano").innerHTML = "<img class = 'menuIMG' src="+ menu.Americano.imgsrc+">"+
+    "<h5>"+menu.Americano.price+"</h5>";
+    document.getElementById("CafeLatte").innerHTML = "<img class = 'menuIMG' src="+ menu.CafeLatte.imgsrc+">"+
+    "<h5>"+menu.CafeLatte.price+"</h5>";
+    document.getElementById("CafeMocha").innerHTML = "<img class = 'menuIMG' src="+ menu.CafeMocha.imgsrc+">"+
+    "<h5>"+menu.CafeMocha.price+"</h5>";
+    document.getElementById("Espresso").innerHTML = "<img class = 'menuIMG' src="+ menu.Espresso.imgsrc+">"+
+    "<h5>"+menu.Espresso.price+"</h5>";
+</script>
 </html>
