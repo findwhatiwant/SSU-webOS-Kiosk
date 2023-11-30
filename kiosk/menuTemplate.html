@@ -6,6 +6,7 @@
 <script>
     let menu = JSON.parse(JSON.stringify(Menu));
 </script>
+<script src="menuProcess.js"></script>
 <!--css 분리 예정입니다.-->
 <style> 
     body{
@@ -43,12 +44,12 @@
         
     </header>
     <div class = "container">
-        <div class = "item" id = "Americano"></div>
-        <div class = "item" id = "CafeLatte"></div>
-        <div class = "item" id = "CafeMocha"></div>
-        <div class = "item" id = "Espresso"></div>
-        <div class = "item" id = "Cappuccino"></div>
-        <div class = "item" id = "CaramelMacchiato"></div>
+        <div class = "item" id = "Americano" onclick="menuClick('아메리카노')"></div>
+        <div class = "item" id = "CafeLatte" onclick="menuClick('카페라떼')"></div>
+        <div class = "item" id = "CafeMocha" onclick="menuClick('카페모카')"></div>
+        <div class = "item" id = "Espresso" onclick="menuClick('에스프레소')"></div>
+        <div class = "item" id = "Cappuccino" onclick="menuClick('카푸치노')"></div>
+        <div class = "item" id = "CaramelMacchiato" onclick="menuClick('카라멜 마키아토')"></div>
         <div id = "menuResults"> <!--메뉴를 클릭했을때 장바구니에 담긴 메뉴를 출력하는 섹션입니다.-->
             
         </div>

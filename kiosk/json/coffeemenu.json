@@ -1,4 +1,4 @@
-Menu = {
+Menu = { //메뉴명은 PascalCase를 사용합니다. 즉 시작이 대문자이고 단어가 두 의미로 나뉠경우 다시 대문자를 적어줍니다.
     "Americano" : {
         "price" : 2500,
         "shot" : 1,
