@@ -1,0 +1,61 @@
+body{
+    background-color: #D3D3D3;
+    margin: 0;
+}
+.container{
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 300px;
+    padding: 20px;
+    box-sizing : border-box;
+}
+.minicontainer{
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-template-columns: 100px;
+    grid-template-rows: 120px 120px;
+}
+.menuIMG{
+    margin-left: 10%;
+    width: 80%;
+    height : 80%;
+}
+.item{
+    background-color: white;
+    border-radius: 10px;
+    margin : 20px;
+    font-family: 'Nanum Gothic', sans-serif;  
+}
+h5{
+    margin-top: 0;
+    text-align: center;
+}
+#menuResults{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    border-radius: 10px;
+}
+#priceResult{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Nanum Gothic', sans-serif;  
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 145px;
+    width: 90%;
+}
+#paymentButton{
+    background-color: #FFEA00;
+    font-family: 'Nanum Gothic', sans-serif;  
+    font-size: 200%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 145px;
+    width: 90%;
+    border: 0;
+}

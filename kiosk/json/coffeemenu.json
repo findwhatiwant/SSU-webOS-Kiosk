@@ -1,31 +1,43 @@
 Menu = { //메뉴명은 PascalCase를 사용합니다. 즉 시작이 대문자이고 단어가 두 의미로 나뉠경우 다시 대문자를 적어줍니다.
     "Americano" : {
+        "menuName" : "아메리카노",
         "price" : 2500,
         "shot" : 1,
+        "number" : 0,
         "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630171805_1656577085458_7skvYFEJwH.jpg"
     },
     "CafeLatte" : {
+        "menuName" : "카페라떼",
         "price" : 3000,
         "shot" : 2,
+        "number" : 1,
         "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630165440_1656575680273_1mqBtip7qh.jpg"
     },
     "CafeMocha" : {
+        "menuName" : "카페모카",
         "price" : 3000,
         "shot" : 2,
+        "number" : 2,
         "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630165537_1656575737487_Bxg3VBe7i4.jpg"
     },
     "Espresso" : {
+        "menuName" : "에스프레소",
         "price" : 2000,
         "shot" : 1,
+        "number" : 3,
         "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220818143216_1660800736386_C007eosz5G.jpg"
     },
     "Cappuccino" : {
+        "menuName" : "카푸치노",
         "price" : 2500,
         "shot" : 2,
+        "number" : 4,
         "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630164244_1656574964279_GmhWXt57V5.jpg"
     },"CaramelMacchiato" : {
+        "menuName" : "카라멜 마키아토",
         "price" : 3500,
         "shot" : 2,
+        "number" : 5,
         "imgsrc" : "https://img.79plus.co.kr/megahp/manager/upload/menu/20220630163626_1656574586502_Hh19hMijc6.jpg"
     }
 }

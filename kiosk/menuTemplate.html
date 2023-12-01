@@ -2,41 +2,20 @@
 <html lang="en">
 <head>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <script type="text/javascript" src="json/coffeemenu.json"></script>
 <script>
     let menu = JSON.parse(JSON.stringify(Menu));
 </script>
 <script src="menuProcess.js"></script>
-<!--css 분리 예정입니다.-->
-<style> 
-    body{
-        background-color: #D3D3D3;
-    }
-    .container{
-        display: grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 200px 200px 300px;
-        padding: 20px;
-        box-sizing : border-box;
-    }
-    .menuIMG{
-        margin-left: 10%;
-        width: 80%;
-        height : 80%;
-    }
-    .item{
-        background-color: white;
-        border-radius: 10px;
-        margin : 20px;  
-    }
-    h5{
-        margin-top: 0;
-    }
-    #menuResults{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        background-color: white;
-        border-radius: 10px;
+<link rel="stylesheet" href="menuTemplateCss.css" />
+<style>
+    header{
+        height: 70px;
+        width: 100%;
+        background-color: #FFEA00;
     }
 </style>
 <body>
@@ -44,14 +23,19 @@
         
     </header>
     <div class = "container">
-        <div class = "item" id = "Americano" onclick="menuClick('아메리카노')"></div>
-        <div class = "item" id = "CafeLatte" onclick="menuClick('카페라떼')"></div>
-        <div class = "item" id = "CafeMocha" onclick="menuClick('카페모카')"></div>
-        <div class = "item" id = "Espresso" onclick="menuClick('에스프레소')"></div>
-        <div class = "item" id = "Cappuccino" onclick="menuClick('카푸치노')"></div>
-        <div class = "item" id = "CaramelMacchiato" onclick="menuClick('카라멜 마키아토')"></div>
-        <div id = "menuResults"> <!--메뉴를 클릭했을때 장바구니에 담긴 메뉴를 출력하는 섹션입니다.-->
+        <div class = "item" id = "Americano" onclick="menuClick(menu.Americano)"></div>
+        <div class = "item" id = "CafeLatte" onclick="menuClick(menu.CafeLatte)"></div>
+        <div class = "item" id = "CafeMocha" onclick="menuClick(menu.CafeMocha)"></div>
+        <div class = "item" id = "Espresso" onclick="menuClick(menu.Espresso)"></div>
+        <div class = "item" id = "Cappuccino" onclick="menuClick(menu.Cappuccino)"></div>
+        <div class = "item" id = "CaramelMacchiato" onclick="menuClick(menu.CaramelMacchiato)"></div>
+
+        <div id = "menuResults"> <!--메뉴를 클릭했을때 장바구니에 담긴 메뉴를 출력하는 div입니다.-->
             
+        </div>
+        <div class = "miniContainer"> 
+            <div id = "priceResult"></div>
+            <button id = "paymentButton">결제하기</button>
         </div>
     </div>
     
