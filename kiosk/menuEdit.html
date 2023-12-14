@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<script type="text/javascript" src="json/coffeemenu.json"></script>
+<script>
+    let menu = JSON.parse(JSON.stringify(Menu));
+</script>
+<style>
+    header{
+        height: 70px;
+        width: 100%;
+        background-color: #FFEA00;
+    }
+    body{
+        background-color: #D3D3D3;
+        margin: 0;
+    }
+    #tableDesign{
+        border-color: black;
+        border-radius: 1px;
+    }
+</style>
+<body>
+    <header>
+        
+    </header>
+
+    <h1>메뉴 수정</h1>
+    <div id = "menuPrint"></div>
+    <table id = "tableDesign">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Job</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+</body>
+<script>
+    document.getElementById("menuPrint").innerHTML = menu;
+    console.log(menu)
+</script>
+
+</html>
