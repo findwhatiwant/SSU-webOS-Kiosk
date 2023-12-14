@@ -13,3 +13,8 @@ function menuClick(menuId) {
     menuCount[menuId.number] += 1;
 }
 
+function paymentClick(){
+    const background = document.getElementsByClassName("beforeofdimmed")[0].className = "dimmed";
+
+}
+

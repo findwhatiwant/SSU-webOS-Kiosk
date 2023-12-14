@@ -2,6 +2,17 @@ body{
     background-color: #D3D3D3;
     margin: 0;
 }
+.dimmed::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255, 0.75);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);    
+}
 .container{
     margin-left: 25%;
     display: grid;
@@ -59,3 +70,47 @@ h5{
     width: 90%;
     border: 0;
 }
+/* .popup {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 55px -25px rgb(0 0 0 / 100%);
+}
+.popup > .title{
+    border-radius: 15px 15px 0 0;
+    min-height: 40px;
+    color: #fff;
+    background-color: #b66;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.popup > .content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup > .cmd {
+    bottom: 0;
+    min-height: 40px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border-radius: 0 0 15px 15px;
+    min-height: 40px;
+    text-align: right;
+}
+.popup > .cmd .button {
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+}
+.popup > .cmd .button:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+} */
