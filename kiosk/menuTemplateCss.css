@@ -86,7 +86,7 @@ h5{
 .popup > .title{
     border-radius: 15px 15px 0 0;
     min-height: 40px;
-    color: #fff;
+    color: #000;
     background-color: #FFEA00;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -105,16 +105,6 @@ h5{
     min-height: 40px;
     text-align: right;
 }
-.popup > .cmd .button {
-    border-radius: 8px;
-    padding: 5px 10px;
-    border: 1px solid #aaa;
-}
-.popup > .cmd .button:hover {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-} 
 .popup > .popupMenu {
     width: 300px;
     height: 150px;
@@ -123,6 +113,7 @@ h5{
     margin-left: 10px;
 }
 .popup > #finalPaymentButton{
+    background-color: #FFEA00;
     width: 50%;
     height: 50px;
     border-radius: 5px;
