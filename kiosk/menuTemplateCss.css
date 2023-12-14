@@ -70,15 +70,16 @@ h5{
     width: 90%;
     border: 0;
 }
-/* .popup {
+.popup {
     z-index: 1;
     position: absolute;
+    font-family: 'Nanum Gothic', sans-serif; 
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    min-width: 300px;
+    min-width: 320px;
     max-width: 600px;
-    background-color: #fff;
+    background-color: #D3D3D3;
     border-radius: 15px;
     box-shadow: 0 2px 55px -25px rgb(0 0 0 / 100%);
 }
@@ -86,7 +87,7 @@ h5{
     border-radius: 15px 15px 0 0;
     min-height: 40px;
     color: #fff;
-    background-color: #b66;
+    background-color: #FFEA00;
     padding: 10px 15px;
     box-sizing: border-box;
     font-weight: bold;
@@ -113,4 +114,20 @@ h5{
     color: #fff;
     background-color: #000;
     border-color: #000;
-} */
+} 
+.popup > .popupMenu {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.popup > #finalPaymentButton{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
