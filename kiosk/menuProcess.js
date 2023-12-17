@@ -2,11 +2,11 @@ var menuCount = [0,0,0,0,0,0];
 
 var priceResult = 0;
 
-function priceUpdate(){
+function priceUpdate(){//가격 업데이트
     document.getElementById("priceResult").innerHTML = priceResult;
 }
 
-function menuClick(menuId) {
+function menuClick(menuId) { //메뉴 개수를 늘려주는 함수
     document.getElementById("menuResults").innerHTML = document.getElementById("menuResults").innerHTML + menuId.menuName + "<br>";
     priceResult += menuId.price;
     priceUpdate();
@@ -14,7 +14,14 @@ function menuClick(menuId) {
     console.log(menuCount);
 }
 
-function menuNameReturn(ipt){
+function menuCancle(){
+    menuCount = [0,0,0,0,0,0];
+    document.getElementById("menuResults").innerHTML = "";
+    priceResult = 0;
+    document.getElementById("priceResult").innerHTML = "";
+}
+
+function menuNameReturn(ipt){ //결제하기 버튼에서 메뉴 이름을 리턴 하기 위함
     for(var i=0; i<menuCount.length; i++){
         if(Object.values(menu)[i].number == ipt){
             return Object.values(menu)[i].menuName;
@@ -22,7 +29,7 @@ function menuNameReturn(ipt){
     }
 }
 
-function paymentClick(){
+function paymentClick(){ //결제하기 버튼
     const background = document.getElementsByClassName("beforeofdimmed")[0].className = "dimmed";
     let popupTag = document.createElement('div');
     let popupMenu = document.createElement('div');
