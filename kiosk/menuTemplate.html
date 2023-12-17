@@ -19,12 +19,12 @@
     }
 </style>
 <body>
-    <div class = "beforeofdimmed">
+    <div class = "beforeofdimmed"></div>
     <header>
         
     </header>
-    <div id = "popupDiv">
-</div>
+    <div class = "tempDiv">
+    <div id = "popupDiv"></div>
     <div class = "container">
         <div class = "item" id = "Americano" onclick="menuClick(menu.Americano)"></div>
         <div class = "item" id = "CafeLatte" onclick="menuClick(menu.CafeLatte)"></div>
@@ -33,20 +33,16 @@
         <div class = "item" id = "Cappuccino" onclick="menuClick(menu.Cappuccino)"></div>
         <div class = "item" id = "CaramelMacchiato" onclick="menuClick(menu.CaramelMacchiato)"></div>
 
-        <div id = "menuResults"> <!--메뉴를 클릭했을때 장바구니에 담긴 메뉴를 출력하는 div입니다.-->
-            
-        </div>
+        <div id = "menuResults"> <!--메뉴를 클릭했을때 장바구니에 담긴 메뉴를 출력하는 div입니다.--></div>
         <div class = "miniContainer"> 
             <div id = "priceResult"></div>
             <button id = "paymentButton" onclick="paymentClick()">결제하기</button>
         </div>
 
     </div>
-    
     <footer>
 
     </footer>
-</div>
 </body>
 <!--메뉴에 동적으로 Json의 데이터를 담는 스크립트 태그입니다.-->
 <script>
