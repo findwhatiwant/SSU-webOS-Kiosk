@@ -1,6 +1,6 @@
 {
   "id": "com.ssu.webos.samdujungchi.webapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "vendor": "My Company",
   "type": "web",
   "main": "index.html",
@@ -8,6 +8,8 @@
   "icon": "icon.png",
   "requiredPermissions": [
     "time.query",
-    "activity.operation"
+    "activity.operation",
+    "notification.operation",
+    "notification.management"
   ]
 }

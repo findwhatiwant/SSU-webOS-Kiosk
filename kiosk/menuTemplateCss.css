@@ -43,11 +43,20 @@ body{
     background-color: white;
     border-radius: 10px;
     margin : 20px;
-    font-family: 'Nanum Gothic', sans-serif;  
+    font-family: 'Nanum Gothic', sans-serif;
 }
 h5{
     margin-top: 0;
     text-align: center;
+}
+.topBtn{
+    background-color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10%;
+    float: right;
+    margin: 1.5em 0.5em auto;
 }
 #menuResults{
     grid-column-start: 1;

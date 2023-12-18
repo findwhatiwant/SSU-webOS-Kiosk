@@ -21,7 +21,10 @@
 <body>
     <div class = "beforeofdimmed"></div>
     <header>
-        
+        <div>
+            <button class="topBtn" id="fontSizeButton" onclick="changeFontSize()">글씨 키우기</button>
+            <button class="topBtn" id="callEmployeeButton" style="background-color: lightcoral;">직원 호출</button>
+        </div>
     </header>
     <div class = "tempDiv">
     <div id = "popupDiv"></div>
@@ -48,16 +51,16 @@
 <!--메뉴에 동적으로 Json의 데이터를 담는 스크립트 태그입니다.-->
 <script>
     document.getElementById("Americano").innerHTML = "<img class = 'menuIMG' src="+ menu.Americano.imgsrc+">"+
-    "<h5>아메리카노 "+menu.Americano.price+"원</h5> </button>";
+    "<h5>아메리카노\n "+menu.Americano.price+"원</h5> </button>";
     document.getElementById("CafeLatte").innerHTML = "<img class = 'menuIMG' src="+ menu.CafeLatte.imgsrc+">"+
-    "<h5>카페라떼 "+menu.CafeLatte.price+"원</h5>";
+    "<h5>카페라떼\n "+menu.CafeLatte.price+"원</h5>";
     document.getElementById("CafeMocha").innerHTML = "<img class = 'menuIMG' src="+ menu.CafeMocha.imgsrc+">"+
-    "<h5>카페모카 "+menu.CafeMocha.price+"원</h5>";
+    "<h5>카페모카\n "+menu.CafeMocha.price+"원</h5>";
     document.getElementById("Espresso").innerHTML = "<img class = 'menuIMG' src="+ menu.Espresso.imgsrc+">"+
-    "<h5>에스프레소 "+menu.Espresso.price+"원</h5>";
+    "<h5>에스프레소\n "+menu.Espresso.price+"원</h5>";
     document.getElementById("Cappuccino").innerHTML = "<img class = 'menuIMG' src="+ menu.Cappuccino.imgsrc+">"+
-    "<h5>카푸치노 "+menu.Cappuccino.price+"원</h5>";
+    "<h5>카푸치노\n "+menu.Cappuccino.price+"원</h5>";
     document.getElementById("CaramelMacchiato").innerHTML = "<img class = 'menuIMG' src="+ menu.CaramelMacchiato.imgsrc+">"+
-    "<h5>카라멜 마키아토 "+menu.CaramelMacchiato.price+"원</h5>";
+    "<h5>카라멜 마키아토\n "+menu.CaramelMacchiato.price+"원</h5>";
 </script>
 </html>
