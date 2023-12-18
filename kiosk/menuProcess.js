@@ -55,3 +55,35 @@ function paymentClick(){ //결제하기 버튼
     
 }
 
+function changeFontSize(){ //글씨 크기 키우거나 원래대로 돌리기
+    const fontSizeBtn = document.getElementById("fontSizeButton");
+    let bodyCss = document.querySelector("body");
+
+    if(fontSizeBtn.innerText != "원래 크기") {
+        bodyCss.style.fontSize = "xx-large";  // 2.5rem?
+        fontSizeBtn.innerText = "원래 크기";
+    }
+    else {
+        bodyCss.style.fontSize = null;
+        fontSizeBtn.innerText = "글씨 키우기";
+    }
+}
+
+window.onload = function() {
+    var bridge = new WebOSServiceBridge();
+
+    const notificationApiUrl = "luna://com.webos.notification";
+    const createToast = "/createToast";
+    const closeToast = "/closeToast";
+
+    const callEmployeeBtn = document.getElementById("callEmployeeButton");
+    callEmployeeBtn.addEventListener('click', function (e){  //toast로 호출 여부를 알리고 db에 저장
+        const toastParameters = {
+            "message": "직원을 호출했습니다. 잠시만 기다려주세요.",
+            "persistent": true,
+            "sourceId": "com.ssu.webos.samdujungchi.webapp",
+        }
+
+        bridge.call(notificationApiUrl + createToast, JSON.stringify(toastParameters));
+    });
+}
