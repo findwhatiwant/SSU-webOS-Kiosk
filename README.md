@@ -22,3 +22,11 @@ Sub color ; #FFFFFF     #000000
 <h4>이후 결제버튼을 누를 경우 결제 이외의 모든 화면이 블러처리가 되며, 실제 결제 기능을 구현할 수 없기에 결제를 진행했다는 가정하에 초기화면으로 넘어가게 됩니다.</h4>
 <img src = "READMEIMG/paymentScene.png">
 
+<h2>Webos에서 구동하는 절차</h2>
+
+<h4>프로젝트를 클론 후 kiosk 파일만 ares-package를 통해 ipk파일을 생성합니다.</h4>
+<br>
+<h4>이후 ares-install 로 사용하실 에뮬레이터 혹은 환경에 설치하신 후 ares-launch로 실행해줍니다.</h4>
+<br>
+<h4>그 외에 사용법은 https://www.webosose.org/ 를 참조하시길 바랍니다.</h4>
+
