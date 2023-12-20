@@ -31,6 +31,12 @@ function menuNameReturn(ipt){ //결제하기 버튼에서 메뉴 이름을 리�
     }
 }
 
+function gotoIndexpage(){
+    console.log("!!");
+    var link = 'index.html';
+    window.location.href=link;
+}
+
 function paymentClick(){ //결제하기 버튼
     const background = document.getElementsByClassName("beforeofdimmed")[0].className = "dimmed";
     let popupTag = document.createElement('div');
@@ -43,7 +49,6 @@ function paymentClick(){ //결제하기 버튼
 
     popupButton.id = "finalPaymentButton";
     popupButton.innerHTML = "결제하기";
-    popupButton.onclick = "";
 
     popupTag.innerHTML = "<div class='title'>결제 화면</div><div class='content'></div>";
     for(var i=0; i<menuCount.length; i++){
@@ -52,7 +57,7 @@ function paymentClick(){ //결제하기 버튼
         }
     }
     popupTag.appendChild(popupMenu);
-    popupTag.appendChild(popupButton);
+    popupTag.innerHTML += "<button id = 'finalPaymentButton', onclick = 'gotoIndexpage()'>결제하기</button>"
     document.getElementById("popupDiv").appendChild(popupTag);
     
 }
