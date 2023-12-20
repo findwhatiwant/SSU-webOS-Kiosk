@@ -24,7 +24,7 @@ Sub color ; #FFFFFF     #000000
 
 <h2>Webos에서 구동하는 절차</h2>
 
-<h4>프로젝트를 클론 후 kiosk 파일만 ares-package를 통해 ipk파일을 생성합니다.</h4>
+<h4>프로젝트를 클론 후 kiosk 폴더만 ares-package를 통해 ipk파일을 생성합니다.</h4>
 <br>
 <h4>이후 ares-install 로 사용하실 에뮬레이터 혹은 환경에 설치하신 후 ares-launch로 실행해줍니다.</h4>
 <br>
