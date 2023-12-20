@@ -49,6 +49,9 @@ h5{
     margin-top: 0;
     text-align: center;
 }
+.right{
+    font-family: 'Nanum Gothic', sans-serif;
+}
 .topBtn{
     background-color: white;
     font-family: 'Nanum Gothic', sans-serif;
@@ -57,6 +60,35 @@ h5{
     border-radius: 10%;
     float: right;
     margin: 1.5em 0.5em auto;
+}
+.modalBtn{
+    background-color: #FFEA00;
+    color: black;
+    border: none;
+    border-radius:  10%;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 5%;
+    margin: 1em;
+    width: 30%;
+    display: inline-block;
+}
+.helpButton{
+    /* left: 100rem; */
+    background-color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    float: right;
+    border: 10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 5px 5px 5px 5px;
+}
+#showDB{
+    position: relative;
+    color: transparent;
+    /* 원래는 보이지 않는 버튼임. 모두 작업 후 아래 코드 적용 */
+    /* background-color: transparent; */
+    border: none;
 }
 #menuResults{
     grid-column-start: 1;
@@ -146,3 +178,118 @@ h5{
     margin-left: 25%;
     margin-bottom: 10px;
 }
+.popup > #resetButton{
+    background-color: #FFEA00;
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modalDB {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+.info {
+    position: relative;
+    display: none;
+    z-index: 1;
+    left: 5%;
+    top: 5%;
+    background-color: white;
+    color: black;
+    width: 80%; 
+    height: 50%;
+    overflow: auto;
+    padding:auto; 
+}
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #FFEA00;
+    color: black;
+    text-align: center;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    text-align: center;
+  }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #FFEA00;
+    color: black;
+    text-align: center;
+  }

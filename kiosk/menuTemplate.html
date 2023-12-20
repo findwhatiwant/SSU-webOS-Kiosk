@@ -23,7 +23,7 @@
     <header>
         <div>
             <button class="topBtn" id="fontSizeButton" onclick="changeFontSize()">글씨 키우기</button>
-            <button class="topBtn" id="callEmployeeButton" style="background-color: lightcoral;">직원 호출</button>
+            <button class="topBtn" id="callEmployeeButton" style="background-color: lightcoral;" onclick="callEmployee()">직원 호출</button>
         </div>
     </header>
     <div class = "tempDiv">
@@ -44,10 +44,79 @@
         <button id = "cancleButton" onclick="menuCancle()">취소하기</button>
 
     </div>
+    <div class = "right">
+        <button id="showDB" ondblclick="showDB()">로그보기</button>
+        <button class = "helpButton" onclick="showHelp()"><b>?</b></button>
+        <div class="info" id="infoModal">
+            <div class="modal-header">
+                <h2>주문 방법</h2>
+            </div>
+            <div class="modal-body">
+                <h3></h3>
+                <h5>1. 왼쪽의 원하는 메뉴를 클릭해주세요</h5>
+                <h5>2. 원하시는 메뉴를 모두 결정하셨으면<br> 결제하기를 눌러주세요</h5>
+                <h5>3. 결제 방법을 선택해주세요</h5>
+                <h5>4. 결제가 완료되면 주문이 완료됩니다</h5>
+                <h3></h3>
+                <h5>※ 추가적인 문의사항은 위의 직원 호출 버튼을 통해 부탁드립니다</h5>
+            </div>
+        </div>
     <footer>
-
     </footer>
+
+    <!-- Modal - db -->
+    <div id="dbModal" class="modalDB">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div class="modal-header">
+            <!-- <span class="close">&times;</span> -->
+            <h2>호출 목록</h2>
+            </div>
+        <div class="modal-body" id="bodyDB"></div>
+        <div class="modal-footer">
+            <button onclick="clearDB()">초기화</button>
+        </div>
+        </div>
+    
+    </div>
+
+    <div id="helpModal" class="modal">
+
+        <!-- Modal - help -->
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>무슨 일인가요?</h2>
+        </div>
+        <div class="modal-body">
+            <button class="modalBtn" onclick="call(0)">기기가<br> 고장났어요</button>
+            <button class="modalBtn" onclick="call(1)">기기를 다루는데<br>어려움이 있어요</button>
+            <button class="modalBtn" onclick="call(2)">기타..</button>
+        </div>
+        <div class="modal-footer">
+            <h5>허위로 호출 시 불이익이 있을 수 있습니다</h5>
+        </div>
+    </div>
+
+
+    <!-- Modal - right -->
+    <div class="modal fade  come-from-modal right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+
 <!--메뉴에 동적으로 Json의 데이터를 담는 스크립트 태그입니다.-->
 <script>
     document.getElementById("Americano").innerHTML = "<img class = 'menuIMG' src="+ menu.Americano.imgsrc+">"+
