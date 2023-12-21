@@ -87,7 +87,7 @@ h5{
     position: relative;
     color: transparent;
     /* 원래는 보이지 않는 버튼임. 모두 작업 후 아래 코드 적용 */
-    /* background-color: transparent; */
+    background-color: transparent;
     border: none;
 }
 #menuResults{

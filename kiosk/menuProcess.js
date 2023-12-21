@@ -65,14 +65,17 @@ function paymentClick(){ //결제하기 버튼
 function changeFontSize(){ //글씨 크기 키우거나 원래대로 돌리기
     const fontSizeBtn = document.getElementById("fontSizeButton");
     let bodyCss = document.querySelector("body");
+    let containerCss = document.getElementById("containerID");
 
     if(fontSizeBtn.innerText != "원래 크기") {
-        bodyCss.style.fontSize = "175%";  // 2.5rem?
+        bodyCss.style.fontSize = "160%";  // 2.5rem?
         fontSizeBtn.innerText = "원래 크기";
+        containerCss.style.maxHeight = "90%";
     }
     else {
         bodyCss.style.fontSize = null;
         fontSizeBtn.innerText = "글씨 키우기";
+        containerCss.style.maxHeight = null;
     }
 }
 
